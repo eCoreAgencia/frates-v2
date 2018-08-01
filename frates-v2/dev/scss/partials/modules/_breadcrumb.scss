@@ -1,0 +1,56 @@
+/* ==========================================================================
+   Breadcrumb
+   ========================================================================== */
+
+.bread-crumb {
+	overflow: hidden;
+	clear: both;
+
+	ul {
+		li {
+			margin-right: 5px;
+			list-style-type: none;
+			display: inline-block;
+			vertical-align: middle;
+			line-height: 20px;
+			font-size: 1.5em;
+			font-weight: lighter;
+
+			&:after {
+				@include font-size(1.4);
+				color: #333;
+				content: '>';
+				display: inline-block;
+				font-weight: bolder;
+				padding-left: 5px;
+				vertical-align: bottom;
+			}
+
+			&:first-child{
+				
+			}
+			
+			a {
+				@include font-size(1.4);
+				color: #999;
+				text-decoration: none;
+
+				&:hover {
+					text-decoration: underline;
+				}
+			}
+
+			&:last-child {
+				a{
+					color: #726846;
+					
+				}
+				
+
+				&:after {
+					content: '';
+				}
+			}
+		}
+	}
+}

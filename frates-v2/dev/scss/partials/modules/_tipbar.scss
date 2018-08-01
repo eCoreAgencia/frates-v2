@@ -1,0 +1,23 @@
+/* ==========================================================================
+   Tipbar
+   ========================================================================== */
+
+.tipbar-mob {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+	padding: 20px;
+	background: #232e3c;
+	svg {
+		width: 1.4em;
+		height: 5.5em;
+		fill: #fff;
+		margin-right: 7px;
+		font-size: 1.2em;
+	}
+	.promo-text {
+		line-height: 1.3em;
+		font-weight: 200;
+	}
+}
